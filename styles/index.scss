@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Work Sans, sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto
+}
+
+@import 'variables';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'about.scss';
+@import 'features.scss';
+@import 'customers.scss';
+@import 'audience.scss';
+@import 'order.scss';
+@import 'footer.scss';

@@ -1,0 +1,75 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+    background-color: #F4F5F7;
+    &__img {
+        display: block;
+        margin: auto;
+    }
+    &__container {
+        @include for-pc {
+            display: flex;
+            margin-left: 10%;
+        }
+    }
+    &__info h1,
+    p {
+        @include for-pc {
+            text-align: left;
+        }
+    }
+    &__info {
+        @include for-pc {
+            margin-left: 9%;
+            margin-right: 13%;
+        }
+    }
+    &__form {
+        form {
+            @include for-pc {
+                display: flex;
+                flex-direction: row;
+                input {
+                    margin: 0;
+                    width: 385px;
+                    text-align: left;
+                    padding-left: 10pt;
+                }
+                .order__button {
+                    font-size: 18px;
+                    width: 160px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &__title {
+        width: 100%;
+        font-size: 45px;
+        line-height: 40px;
+        font-weight: 700;
+        letter-spacing: -0.25;
+        padding-left: 0pt;
+        padding-right: 0pt;
+        text-align: center;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #2B292D;
+        padding-right: 40pt;
+    }
+    &__email {
+        line-height: 48px;
+        font-size: 22px;
+        margin: 20% 0 5% 0;
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+    &__terms {
+        color: GREY;
+    }
+}

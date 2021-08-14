@@ -1,0 +1,76 @@
+.audience {
+    background-color: rgb(0%, 63%, 78%, 0.07);
+    padding: 10% 5%;
+    text-align: center;
+    &_info {
+        @include for-pc {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 10%;
+        }
+    }
+    .card__list {
+        @include for-pc {
+            display: flex;
+        }
+    }
+    .buttons {
+        @include for-pc {
+            display: flex;
+            margin: 0 20%;
+        }
+    }
+    button {
+        margin-bottom: 2%;
+    }
+    &__title {
+        font-size: 22px;
+        line-height: 34px;
+        opacity: 1;
+    }
+    .sub {
+        font-size: 45px;
+        line-height: 40px;
+        letter-spacing: -0.36px;
+    }
+    &__text {
+        font-size: 29px;
+        line-height: 34px;
+        @include for-pc {
+            font-size: 24px;
+        }
+    }
+    .card__list {
+        @include for-pc {
+            justify-content: space-between;
+        }
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 11px 55px 0px #00000012;
+        margin-bottom: 5%;
+        @include for-pc {
+            height: 300px;
+            width: 23%;
+            margin: 0;
+            text-align: center;
+        }
+        p {
+            padding: 10%;
+            margin: 0;
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+    }
+    .active {
+        background-color: #3141C5;
+        color: #fff;
+        box-shadow: 0px 13px 18px 0px #00000026;
+    }
+}
+
+.developers {
+    margin-top: 10%;
+}

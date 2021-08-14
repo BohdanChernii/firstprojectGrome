@@ -1,0 +1,17 @@
+@mixin for-mobile {
+    @media(min-width: 320px) and (max-width: 767px) {
+        @content
+    }
+}
+
+@mixin for-pc {
+    @media(min-width: 769px) {
+        @content
+    }
+}
+
+@mixin hide-button {
+    @media (max-width: 1000px) {
+        @content
+    }
+}
