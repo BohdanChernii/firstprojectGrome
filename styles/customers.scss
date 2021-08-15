@@ -29,6 +29,7 @@
             display: block;
             max-width: 100%;
             padding: 10%;
+            filter: brightness(0);
             @include for-pc {
                 padding: 0;
             }

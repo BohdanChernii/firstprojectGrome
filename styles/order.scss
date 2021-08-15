@@ -1,75 +1,101 @@
 .order {
-    display: flex;
-    flex-direction: column;
-    padding: 10% 5%;
-    background-color: #F4F5F7;
-    &__img {
-        display: block;
-        margin: auto;
+    width: 320px;
+    margin: auto;
+    background-color: #f4f5f7;
+    padding: 50px 15px;
+    @include for-pc {
+        width: 1400px;
+        margin: 0;
+        padding: 73px 230px 72px 234px;
     }
-    &__container {
+    .order__container {
         @include for-pc {
             display: flex;
-            margin-left: 10%;
+            flex-direction: row;
         }
     }
-    &__info h1,
-    p {
+    .order__img {
+        @include for-pc {
+            display: block;
+        }
+    }
+    &__img {
+        margin: 0 45px;
+        width: 200px;
+        height: 220px;
+        @include for-pc {
+            width: 270px;
+            height: 296px;
+            margin-right: 122px;
+        }
+    }
+    &__title {
+        text-align: center;
+        letter-spacing: -0.25px;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700s;
+        margin-top: 40px;
+        margin-bottom: 18px;
         @include for-pc {
             text-align: left;
         }
     }
-    &__info {
+    &__text {
+        width: 290px;
+        height: 167px;
+        font-size: 22px;
+        line-height: 32px;
+        color: #2b292d;
         @include for-pc {
-            margin-left: 9%;
-            margin-right: 13%;
+            width: 555px;
+            height: 64px;
         }
     }
     &__form {
         form {
+            display: flex;
+            flex-direction: column;
             @include for-pc {
-                display: flex;
                 flex-direction: row;
-                input {
-                    margin: 0;
+            }
+            .order__email {
+                width: 290px;
+                height: 48px;
+                border-radius: 2px;
+                border: none;
+                text-align: center;
+                margin-bottom: 12px;
+                @include for-pc {
                     width: 385px;
+                    height: 48px;
                     text-align: left;
-                    padding-left: 10pt;
+                    padding-left: 15pt;
+                    margin-right: 10px;
                 }
-                .order__button {
-                    font-size: 18px;
+            }
+            .order__button {
+                height: 48px;
+                width: 290px;
+                border: none;
+                font-weight: 700;
+                font-size: 18px;
+                border-radius: 2px;
+                background-color: #3040c4;
+                color: #fff;
+                @include for-pc {
                     width: 160px;
-                    margin-left: 10px;
+                    height: 48px;
                 }
             }
         }
     }
-    &__title {
-        width: 100%;
-        font-size: 45px;
-        line-height: 40px;
-        font-weight: 700;
-        letter-spacing: -0.25;
-        padding-left: 0pt;
-        padding-right: 0pt;
-        text-align: center;
-    }
-    &__text {
-        font-size: 22px;
-        line-height: 32px;
-        font-weight: 400;
-        color: #2B292D;
-        padding-right: 40pt;
-    }
-    &__email {
-        line-height: 48px;
-        font-size: 22px;
-        margin: 20% 0 5% 0;
-        border: none;
-        text-align: center;
-        width: 100%;
-    }
-    &__terms {
-        color: GREY;
-    }
+}
+
+.order__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    margin: 0;
+    margin-top: 10px;
 }
