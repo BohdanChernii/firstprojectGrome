@@ -4,9 +4,10 @@
     margin: auto;
     @include for-pc {
         width: 1400px;
-        background-color: #F3C6BD;
         padding-top: 39px;
         padding-bottom: 100px;
+        background-color: #F3C6BD;
+        color: #2B292D;
     }
 }
 
@@ -20,7 +21,9 @@
         display: flex;
         width: 261px;
         height: 64px;
-        @include for-pc {}
+        @include for-pc {
+            width: 297px;
+        }
         &__info {
             display: flex;
             align-items: center;
@@ -29,6 +32,7 @@
                 width: 299px;
                 height: 60px;
                 margin-left: 15px;
+                margin-top: 6px;
             }
             &_name {
                 font-size: 20px;
@@ -48,15 +52,18 @@
             @include for-pc {
                 display: block;
                 margin: 0;
-                line-height: 25px;
                 width: 222px;
+                line-height: 25px;
+                opacity: 0.4;
             }
         }
     }
     display: flex;
     flex-direction: row;
     .header__button {
-        @include for-pc {}
+        @include for-pc {
+            margin-left: auto;
+        }
     }
     button {
         display: none;
@@ -74,16 +81,16 @@
         @include for-pc {
             display: flex;
             margin-left: 335px;
-            padding-top: 12px;
+            margin-top: 7px;
             &__list {
                 display: flex;
-                list-style: none;
+                justify-content: space-between;
                 padding: 0;
+                margin: 0;
+                margin-right: 75px;
                 width: 273px;
                 height: 25px;
-                margin: 0;
-                justify-content: space-between;
-                margin-right: 75px;
+                list-style: none;
                 font-size: 18px;
                 line-height: 25px;
             }
@@ -93,6 +100,10 @@
 
 .navigation__list-item-active {
     font-weight: 700;
+}
+
+.navigation__list-item img {
+    margin-left: 11px;
 }
 
 .header__menu-button {
@@ -106,14 +117,19 @@
     }
 }
 
-.logo__image {
-    width: 48px;
-    height: 48px;
-    margin: 8px 0 15px 8px;
+.log__icon {
     @include for-pc {
-        width: 60px;
-        height: 60px;
-        margin: 0;
+        margin-top: 2px;
+    }
+    .logo__image {
+        width: 48px;
+        height: 48px;
+        margin: 8px 0 15px 8px;
+        @include for-pc {
+            width: 60px;
+            height: 60px;
+            margin: 0;
+        }
     }
 }
 

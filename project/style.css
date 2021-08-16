@@ -18,9 +18,10 @@ body {
 @media (min-width: 769px) {
   .header__section {
     width: 1400px;
-    background-color: #F3C6BD;
     padding-top: 39px;
     padding-bottom: 100px;
+    background-color: #F3C6BD;
+    color: #2B292D;
   }
 }
 
@@ -40,6 +41,11 @@ body {
   width: 261px;
   height: 64px;
 }
+@media (min-width: 769px) {
+  .menu .logo {
+    width: 297px;
+  }
+}
 .menu .logo__info {
   display: flex;
   align-items: center;
@@ -50,6 +56,7 @@ body {
     width: 299px;
     height: 60px;
     margin-left: 15px;
+    margin-top: 6px;
   }
 }
 .menu .logo__info_name {
@@ -73,8 +80,14 @@ body {
   .menu .logo__info_description {
     display: block;
     margin: 0;
-    line-height: 25px;
     width: 222px;
+    line-height: 25px;
+    opacity: 0.4;
+  }
+}
+@media (min-width: 769px) {
+  .menu .header__button {
+    margin-left: auto;
   }
 }
 .menu button {
@@ -97,17 +110,17 @@ body {
   .menu .navigation {
     display: flex;
     margin-left: 335px;
-    padding-top: 12px;
+    margin-top: 7px;
   }
   .menu .navigation__list {
     display: flex;
-    list-style: none;
+    justify-content: space-between;
     padding: 0;
+    margin: 0;
+    margin-right: 75px;
     width: 273px;
     height: 25px;
-    margin: 0;
-    justify-content: space-between;
-    margin-right: 75px;
+    list-style: none;
     font-size: 18px;
     line-height: 25px;
   }
@@ -115,6 +128,10 @@ body {
 
 .navigation__list-item-active {
   font-weight: 700;
+}
+
+.navigation__list-item img {
+  margin-left: 11px;
 }
 
 .header__menu-button {
@@ -130,13 +147,18 @@ body {
   }
 }
 
-.logo__image {
+@media (min-width: 769px) {
+  .log__icon {
+    margin-top: 2px;
+  }
+}
+.log__icon .logo__image {
   width: 48px;
   height: 48px;
   margin: 8px 0 15px 8px;
 }
 @media (min-width: 769px) {
-  .logo__image {
+  .log__icon .logo__image {
     width: 60px;
     height: 60px;
     margin: 0;
@@ -158,11 +180,13 @@ body {
 @media (min-width: 769px) {
   .headline__section {
     width: 1400px;
+    color: #2B292D;
   }
 }
 
 .headline {
   display: flex;
+  flex-direction: column;
 }
 @media (min-width: 769px) {
   .headline {
@@ -202,6 +226,7 @@ body {
     line-height: 78px;
     letter-spacing: -0.5px;
     margin-bottom: 34px;
+    color: #2B292D;
   }
 }
 .headline__description-text {
@@ -256,23 +281,24 @@ body {
   color: #fff;
 }
 
-.learn {
+.button__learn {
   background-color: #fff;
   color: #3040C4;
 }
 
 .ouch {
-  margin-top: 18px;
   display: flex;
+  margin-top: 18px;
+  margin-bottom: 36px;
   width: 320px;
   height: 180px;
-  margin-bottom: 36px;
 }
 @media (min-width: 769px) {
   .ouch {
+    margin-bottom: 77px;
+    margin-left: auto;
     width: 796px;
     height: 448px;
-    margin-left: auto;
   }
 }
 

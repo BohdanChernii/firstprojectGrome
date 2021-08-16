@@ -9,9 +9,3 @@
         @content
     }
 }
-
-@mixin hide-button {
-    @media (max-width: 1400px) {
-        @content
-    }
-}

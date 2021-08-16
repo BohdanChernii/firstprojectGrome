@@ -4,11 +4,13 @@
         background: #F3C6BD;
         @include for-pc {
             width: 1400px;
+            color: #2B292D;
         }
     }
     
     .headline {
         display: flex;
+        flex-direction: column;
         @include for-pc {
             flex-direction: row;
             margin-left: 126px;
@@ -34,6 +36,7 @@
                     line-height: 78px;
                     letter-spacing: -0.5px;
                     margin-bottom: 34px;
+                    color: #2B292D;
                 }
                 font-size: 50px;
                 line-height: 50px;
@@ -87,24 +90,25 @@
     
     .button {
         background-color: #3040C4;
-        color: #fff
+        color: #fff;
     }
     
-    .learn {
+    .button__learn {
         background-color: #fff;
         color: #3040C4;
     }
     
     .ouch {
-        margin-top: 18px;
         display: flex;
+        margin-top: 18px;
+        margin-bottom: 36px;
         width: 320px;
         height: 180px;
-        margin-bottom: 36px;
         @include for-pc {
+            margin-bottom: 77px;
+            margin-left: auto;
             width: 796px;
             height: 448px;
-            margin-left: auto;
         }
     }
     
