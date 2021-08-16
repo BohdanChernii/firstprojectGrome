@@ -691,7 +691,6 @@ body {
 @media (min-width: 769px) {
   .order {
     width: 1400px;
-    margin: 0;
     padding: 73px 230px 72px 234px;
   }
 }
