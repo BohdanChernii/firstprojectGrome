@@ -541,14 +541,19 @@ body {
     height: 48px;
     margin-right: 10px;
   }
-}
-
-.learn {
-  color: black;
+  .audience .buttons button .button__learn {
+    background-color: #fff;
+    color: black;
+  }
 }
 
 .audience__title {
   margin: 0;
+}
+@media (min-width: 769px) {
+  .audience__title {
+    margin-bottom: 24px;
+  }
 }
 
 .sub {
@@ -655,6 +660,7 @@ body {
 @media (min-width: 769px) {
   .card__list .card {
     margin-right: 31px;
+    width: 262px;
   }
 }
 .card__list .card img {
