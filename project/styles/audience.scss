@@ -31,17 +31,19 @@
                 width: 160px;
                 height: 48px;
                 margin-right: 10px;
-                .button__learn {
-                    background-color: #fff;
-                    color: black;
-                }
             }
         }
     }
 }
 
+.button__learn {
+    background-color: #fff;
+    color: black;
+}
+
 .audience__title {
     margin: 0;
+    margin-bottom: 17px;
     @include for-pc {
         margin-bottom: 24px;
     }

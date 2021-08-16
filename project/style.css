@@ -152,6 +152,8 @@ body {
   margin-right: 10px;
   margin-top: 8px;
   margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
 }
 @media (min-width: 769px) {
   .logo__icon {
@@ -160,8 +162,8 @@ body {
   }
 }
 .logo__icon .logo__image {
-  width: 48px;
-  height: 48px;
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 769px) {
   .logo__icon .logo__image {
@@ -541,14 +543,16 @@ body {
     height: 48px;
     margin-right: 10px;
   }
-  .audience .buttons button .button__learn {
-    background-color: #fff;
-    color: black;
-  }
+}
+
+.button__learn {
+  background-color: #fff;
+  color: black;
 }
 
 .audience__title {
   margin: 0;
+  margin-bottom: 17px;
 }
 @media (min-width: 769px) {
   .audience__title {
