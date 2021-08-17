@@ -1,100 +1,100 @@
 .order {
-    width: 320px;
-    margin: auto;
-    background-color: #f4f5f7;
-    padding: 50px 15px;
+  width: 320px;
+  margin: auto;
+  background-color: #f4f5f7;
+  padding: 50px 15px;
+  @include for-pc {
+    width: 1400px;
+    padding: 73px 230px 72px 234px;
+  }
+  .order__container {
     @include for-pc {
-        width: 1400px;
-        padding: 73px 230px 72px 234px;
+      display: flex;
+      flex-direction: row;
     }
-    .order__container {
-        @include for-pc {
-            display: flex;
-            flex-direction: row;
-        }
+  }
+  .order__img {
+    @include for-pc {
+      display: block;
     }
-    .order__img {
-        @include for-pc {
-            display: block;
-        }
+  }
+  &__img {
+    margin: 0 45px;
+    width: 200px;
+    height: 220px;
+    @include for-pc {
+      width: 270px;
+      height: 296px;
+      margin-right: 122px;
     }
-    &__img {
-        margin: 0 45px;
-        width: 200px;
-        height: 220px;
-        @include for-pc {
-            width: 270px;
-            height: 296px;
-            margin-right: 122px;
-        }
+  }
+  &__title {
+    text-align: center;
+    letter-spacing: -0.25px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700s;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    @include for-pc {
+      text-align: left;
     }
-    &__title {
-        text-align: center;
-        letter-spacing: -0.25px;
-        font-size: 40px;
-        line-height: 40px;
-        font-weight: 700s;
-        margin-top: 40px;
-        margin-bottom: 18px;
-        @include for-pc {
-            text-align: left;
-        }
+  }
+  &__text {
+    width: 290px;
+    height: 167px;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2b292d;
+    @include for-pc {
+      width: 555px;
+      height: 64px;
     }
-    &__text {
+  }
+  &__form {
+    form {
+      display: flex;
+      flex-direction: column;
+      @include for-pc {
+        flex-direction: row;
+      }
+      .order__email {
         width: 290px;
-        height: 167px;
-        font-size: 22px;
-        line-height: 32px;
-        color: #2b292d;
+        height: 48px;
+        border-radius: 2px;
+        border: none;
+        text-align: center;
+        margin-bottom: 12px;
         @include for-pc {
-            width: 555px;
-            height: 64px;
+          width: 385px;
+          height: 48px;
+          text-align: left;
+          padding-left: 15pt;
+          margin-right: 10px;
         }
-    }
-    &__form {
-        form {
-            display: flex;
-            flex-direction: column;
-            @include for-pc {
-                flex-direction: row;
-            }
-            .order__email {
-                width: 290px;
-                height: 48px;
-                border-radius: 2px;
-                border: none;
-                text-align: center;
-                margin-bottom: 12px;
-                @include for-pc {
-                    width: 385px;
-                    height: 48px;
-                    text-align: left;
-                    padding-left: 15pt;
-                    margin-right: 10px;
-                }
-            }
-            .order__button {
-                height: 48px;
-                width: 290px;
-                border: none;
-                font-weight: 700;
-                font-size: 18px;
-                border-radius: 2px;
-                background-color: #3040c4;
-                color: #fff;
-                @include for-pc {
-                    width: 160px;
-                    height: 48px;
-                }
-            }
+      }
+      .order__button {
+        height: 48px;
+        width: 290px;
+        border: none;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 2px;
+        background-color: #3040c4;
+        color: #fff;
+        @include for-pc {
+          width: 160px;
+          height: 48px;
         }
+      }
     }
+  }
 }
 
 .order__terms {
-    font-size: 14px;
-    line-height: 22px;
-    color: rgba(43, 41, 45, 0.6);
-    margin: 0;
-    margin-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+  margin: 0;
+  margin-top: 10px;
 }

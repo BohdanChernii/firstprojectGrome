@@ -1,38 +1,38 @@
 .customers {
-    @include for-pc {
-        width: 100%;
-    }
+  @include for-pc {
+    width: 100%;
+  }
 }
 
 .customers__container {
+  display: flex;
+  flex-wrap: wrap;
+  @include for-pc {
+    padding-top: 2%;
+    margin: 0 7%;
+  }
+  .object {
+    flex-basis: 30%;
     display: flex;
-    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    border: 1px #e3e3e3 solid;
+    min-height: 107px;
     @include for-pc {
-        padding-top: 2%;
-        margin: 0 7%;
+      border: none;
+      flex-direction: row;
+      flex-basis: 15%;
+      justify-content: left;
     }
-    .object {
-        flex-basis: 30%;
-        display: flex;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-        border: 1px #E3E3E3 solid;
-        min-height: 107px;
-        @include for-pc {
-            border: none;
-            flex-direction: row;
-            flex-basis: 15%;
-            justify-content: left;
-        }
-        img {
-            display: block;
-            max-width: 100%;
-            padding: 10%;
-            filter: brightness(0);
-            @include for-pc {
-                padding: 0;
-            }
-        }
+    img {
+      display: block;
+      max-width: 100%;
+      padding: 10%;
+      filter: brightness(0);
+      @include for-pc {
+        padding: 0;
+      }
     }
+  }
 }
