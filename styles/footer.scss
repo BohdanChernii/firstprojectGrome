@@ -1,206 +1,232 @@
 .footer {
-  width: 320px;
-  margin: auto;
-  @include for-pc {
-    width: 1400px;
-    padding: 43px 130px 47px 130px;
-    display: flex;
-  }
+    min-width: 320px;
+    margin: auto;
+    @include for-pc {
+        width: 1400px;
+        padding: 43px 130px 47px 130px;
+        display: flex;
+    }
 }
 
 footer {
-  width: 320px;
-  margin: auto;
-  .logo {
-    padding: 0 15px;
-    @include for-pc {
-      padding: 0;
-      display: flex;
+    min-width: 320px;
+    margin: auto;
+    .container {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  .logo__icon_footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    @include for-pc {
-      margin: 0;
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
+    .logo {
+        padding: 0 15px;
+        @include for-pc {
+            padding: 0;
+            display: flex;
+        }
     }
-    .footer__logo {
-      width: 60px;
-      height: 60px;
-      margin: 0;
+    .logo__icon_footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        @include for-pc {
+            margin: 0;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+        .footer__logo {
+            width: 60px;
+            height: 60px;
+            margin: 0;
+        }
     }
-  }
-  .logo__info {
-    text-align: center;
-    line-height: 51px;
-    p {
-      margin: 0;
+    .logo__info {
+        text-align: center;
+        line-height: 51px;
+        p {
+            margin: 0;
+        }
+        &_name {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            @include for-pc {
+                text-align: left;
+            }
+        }
+        &_description {
+            font-size: 18px;
+            line-height: 25px;
+            color: #2b292d35;
+            padding: 0 15px;
+            @include for-pc {
+                padding: 0;
+            }
+        }
     }
-    &_name {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 25px;
-      @include for-pc {
-        text-align: left;
-      }
+    .download__links {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 31px;
+        margin-left: 15px;
+        margin-right: 15px;
+        max-width: 320px;
+        @include for-pc {
+            justify-content: left;
+            width: 300px;
+            margin-left: 0;
+        }
     }
-    &_description {
-      font-size: 18px;
-      line-height: 25px;
-      color: #2b292d35;
-      padding: 0 15px;
-      @include for-pc {
-        padding: 0;
-      }
-    }
-  }
-  .download__links {
-    display: flex;
-    margin-top: 31px;
-    margin-left: 15px;
-    margin-right: 15px;
-    justify-content: space-evenly;
-    @include for-pc {
-      justify-content: left;
-      width: 300px;
-      margin-left: 0;
-    }
-  }
 }
 
 .download__links-app {
-  width: 135px;
-  height: 40px;
-  @include for-pc {
+    width: 135px;
+    height: 40px;
     margin-right: 10px;
-  }
+    @include for-pc {
+        margin-right: 10px;
+    }
 }
 
 .download__links-google {
-  width: 116px;
-  height: 40px;
+    width: 116px;
+    height: 40px;
 }
 
 .footer__description {
-  display: none;
-  @include for-pc {
-    display: block;
-    width: 360px;
-    height: 85px;
-    color: #2b292d60;
-    font-size: 18px;
-  }
-}
-
-.product {
-  padding: 0 15px;
-  h1 {
-    font-size: 22px;
-    line-height: 28px;
-    width: 290px;
-    height: 28px;
-  }
-  &__list {
-    list-style: none;
-    padding: 0;
-    color: rgba(43, 41, 45, 0.6);
-    line-height: 30px;
-    font-size: 18px;
-    height: 175px;
+    display: none;
     @include for-pc {
-      width: 265px;
-      height: 185px;
+        display: block;
+        width: 360px;
+        height: 85px;
+        color: #2b292d60;
+        font-size: 18px;
     }
-  }
 }
 
 .footer__lists {
-  @include for-pc {
     display: flex;
-    margin-left: 126px;
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #E3E3E3;
+    margin-top: 40px;
+}
+
+.product {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    h1 {
+        font-size: 22px;
+        line-height: 28px;
+        width: 290px;
+        height: 28px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        color: rgba(43, 41, 45, 0.6);
+        line-height: 30px;
+        font-size: 18px;
+        height: 175px;
+        margin-bottom: 0;
+        @include for-pc {
+            width: 265px;
+            height: 185px;
+        }
+    }
+}
+
+.footer__lists {
+    @include for-pc {
+        display: flex;
+        margin-left: 126px;
+    }
 }
 
 .company {
-  padding: 0 15px;
-  height: 136px;
-  h1 {
-    font-size: 22px;
-    line-height: 28px;
-    width: 290px;
-    height: 28px;
-  }
-  &__list {
-    list-style: none;
-    padding: 0;
-    color: rgba(43, 41, 45, 0.6);
-    line-height: 30px;
-    font-size: 18px;
-    @include for-pc {
-      width: 265px;
-      height: 185px;
+    padding: 0 15px;
+    min-height: 136px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 22px;
+        line-height: 28px;
+        width: 290px;
+        height: 28px;
+        margin-bottom: 18px;
     }
-  }
+    &__list {
+        list-style: none;
+        padding: 0;
+        color: rgba(43, 41, 45, 0.6);
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 0;
+        @include for-pc {
+            width: 265px;
+            height: 185px;
+        }
+    }
 }
 
 .terms {
-  padding: 0 15px;
-  width: 320px;
-  margin: auto;
-  margin-top: 60px;
-  @include for-pc {
-    width: 1400px;
-    border-top: #2b292d20 1px solid;
-    margin-top: 0;
-    padding: 15px 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__list {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    width: 180px;
-    font-size: 14px;
-    color: rgba(43, 41, 45, 0.6);
-    padding-left: 0pt;
-    margin-bottom: 31px;
+    padding: 0 15px;
+    width: 320px;
+    margin: auto;
+    margin-top: 60px;
     @include for-pc {
-      margin: 0;
-      width: 180px;
-      height: 22px;
+        width: 100%;
+        border-top: #2b292d20 1px solid;
+        margin-top: 0;
+        padding: 15px 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    &-item {
-      margin-right: 20px;
+    &__list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        width: 180px;
+        font-size: 14px;
+        color: rgba(43, 41, 45, 0.6);
+        padding-left: 0pt;
+        margin-bottom: 31px;
+        @include for-pc {
+            margin: 0;
+            width: 180px;
+            height: 22px;
+        }
+        &-item {
+            margin-right: 20px;
+        }
     }
-  }
-  .social-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    @include for-pc {
-      align-items: center;
-      width: 180px;
-      height: 22px;
-      margin: 0;
+    .social-links {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        @include for-pc {
+            align-items: center;
+            width: 180px;
+            height: 22px;
+            margin: 0;
+        }
+        .link img {
+            width: 21px;
+            height: 16px;
+            margin-right: 20px;
+            margin-bottom: 23px;
+            margin-top: 0;
+            @include for-pc {
+                width: 18px;
+                height: 17px;
+                margin: 0;
+                margin-left: 20px;
+            }
+        }
     }
-    .link img {
-      width: 21px;
-      height: 16px;
-      margin-right: 20px;
-      margin-bottom: 23px;
-      margin-top: 0;
-      @include for-pc {
-        width: 18px;
-        height: 17px;
-        margin: 0;
-        margin-left: 20px;
-      }
-    }
-  }
 }

@@ -1,185 +1,183 @@
 .audience {
-  width: 320px;
-  margin: auto;
-  background-color: rgb(0, 161, 198, 0.07);
-  padding: 50px 15px;
-  padding-bottom: 35px;
-  text-align: center;
-  @include for-pc {
-    width: 1400px;
-    padding: 110px 130px;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 28px;
+    min-width: 320px;
+    margin: auto;
+    background-color: rgb(0, 161, 198, 0.07);
+    padding: 50px 15px;
+    padding-bottom: 35px;
+    text-align: center;
     @include for-pc {
-      margin: auto;
-      flex-direction: row;
-      width: 300px;
-      margin-bottom: 111px;
-      margin-top: 34px;
+        width: 1400px;
+        padding: 110px 130px;
     }
-    button {
-      height: 48px;
-      width: 290px;
-      margin-bottom: 12px;
-      border: none;
-      font-weight: 700;
-      font-size: 18px;
-      @include for-pc {
-        width: 160px;
-        height: 48px;
-        margin-right: 10px;
-      }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+        align-items: center;
+        @include for-pc {
+            margin: auto;
+            flex-direction: row;
+            width: 300px;
+            margin-bottom: 111px;
+            margin-top: 34px;
+        }
+        button {
+            height: 48px;
+            width: 290px;
+            margin-bottom: 12px;
+            border: none;
+            font-weight: 700;
+            font-size: 18px;
+            @include for-pc {
+                width: 160px;
+                height: 48px;
+                margin-right: 10px;
+            }
+        }
     }
-  }
 }
 
 .button__learn {
-  background-color: #fff;
-  color: black;
+    background-color: #fff;
+    color: black;
 }
 
 .audience__title {
-  margin: 0;
-  margin-bottom: 17px;
-  @include for-pc {
-    margin-bottom: 24px;
-  }
+    margin: 0;
+    margin-bottom: 17px;
+    @include for-pc {
+        margin-bottom: 24px;
+    }
 }
 
 .sub {
-  margin-bottom: 17px;
-  font-size: 40px;
-  line-height: 40px;
-  width: 290px;
-  height: 80px;
-  letter-spacing: -0.36px;
-  text-align: center;
-  @include for-pc {
-    display: flex;
-    margin: auto;
-    width: 555px;
-    height: 166px;
-    font-size: 56px;
-    letter-spacing: -0.5px;
-    line-height: 56px;
-    margin-top: 24px;
-  }
+    margin-bottom: 17px;
+    font-size: 40px;
+    line-height: 40px;
+    min-width: 290px;
+    height: 80px;
+    letter-spacing: -0.36px;
+    text-align: center;
+    @include for-pc {
+        display: flex;
+        margin: auto;
+        width: 555px;
+        height: 166px;
+        font-size: 56px;
+        letter-spacing: -0.5px;
+        line-height: 56px;
+        margin-top: 24px;
+    }
 }
 
 .audience__text {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 24px;
-  line-height: 34px;
-  height: 139px;
-  width: 290px;
-  @include for-pc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 34px;
-    width: 555px;
-    height: 72px;
-  }
-  .card__list {
+    height: 139px;
+    min-width: 290px;
     @include for-pc {
-      flex-direction: row;
-      display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 24px;
+        line-height: 34px;
+        width: 555px;
+        height: 72px;
     }
-  }
+    .card__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include for-pc {
+            flex-direction: row;
+            display: flex;
+        }
+    }
 }
 
-
-
-
-
-
 .developers {
-  @include for-pc {
-    width: 262px;
-    height: 300px;
-  }
-  
-  img {
-    width: 138px;
-    height: 195px;
-  }
+    @include for-pc {
+        width: 262px;
+        height: 300px;
+    }
+    img {
+        width: 138px;
+        height: 195px;
+    }
 }
 
 .entertaiment {
-  @include for-pc {
-    width: 262px;
-    height: 300px;
-  }
-  img {
-    width: 138px;
-    height: 195px;
-  }
+    @include for-pc {
+        width: 262px;
+        height: 300px;
+    }
+    img {
+        width: 138px;
+        height: 195px;
+    }
 }
 
 .athletes {
-  @include for-pc {
-    width: 262px;
-    height: 300px;
-  }
-  img {
-    width: 160px;
-    height: 195px;
-  }
+    @include for-pc {
+        width: 262px;
+        height: 300px;
+    }
+    img {
+        width: 160px;
+        height: 195px;
+    }
 }
 
 .creators {
-  @include for-pc {
-    width: 262px;
-    height: 300px;
-  }
-  img {
-    width: 119px;
-    height: 195px;
-  }
+    @include for-pc {
+        width: 262px;
+        height: 300px;
+    }
+    img {
+        width: 119px;
+        height: 195px;
+    }
 }
 
 .card__list {
-  @include for-pc {
     display: flex;
-    flex-direction: row;
-  }
-  .card {
-    width: 290px;
-    height: 300px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
     @include for-pc {
-      margin-right: 31px;
-      width: 262px;
+        display: flex;
+        flex-direction: row;
     }
-    .card__img {
-      width: 138px;
-      height: 195px;
-      margin: 22px 76px;
+    .card {
+        width: 290px;
+        height: 300px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        margin-left: 5px;
+        @include for-pc {
+            width: 262px;
+        }
+        .card__img {
+            width: 138px;
+            height: 195px;
+            margin: 22px 76px;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 33px;
+            font-size: 22px;
+            font-weight: 700;
+        }
     }
-    p {
-      margin: 0;
-      margin-bottom: 33px;
-      font-size: 22px;
-      font-weight: 700;
+    .card:hover {
+        background-color: #3141c5;
+        color: #fff;
+        box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
     }
-  }
-  .card:hover {
-    background-color: #3141c5;
-    color: #fff;
-    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
-      0px 11px 55px rgba(0, 0, 0, 0.07);
-  }
 }
-
-
