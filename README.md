@@ -1,6 +1,6 @@
 # firstprojectGrome.io
 
-Link:https://bohdanchernii.github.io/firstprojectGrome.io/
+Link: https://bohdanchernii.github.io/firstprojectGrome.io/
 
 Technologies:
 
