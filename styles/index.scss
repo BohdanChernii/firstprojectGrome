@@ -1,21 +1,22 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Work Sans, sans-serif;
+  font-family: Work Sans, sans-serif;
 }
 
 body {
-    margin: auto
+  margin: auto;
 }
 
-@import 'variables';
-@import 'header.scss';
-@import 'headline.scss';
-@import 'about.scss';
-@import 'features.scss';
-@import 'customers.scss';
-@import 'audience.scss';
-@import 'order.scss';
-@import 'footer.scss';
+@import "breakpoints.scss";
+@import "variables.scss";
+@import "header.scss";
+@import "headline.scss";
+@import "about.scss";
+@import "features.scss";
+@import "customers.scss";
+@import "audience.scss";
+@import "order.scss";
+@import "footer.scss";

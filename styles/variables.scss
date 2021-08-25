@@ -1,11 +1,8 @@
-@mixin for-mobile {
-    @media (min-width: 320px) and (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin for-pc {
-    @media (min-width: 1400px) {
-        @content;
-    }
-}
+$headerbc: #f3c6bd;
+$color: #2b292d;
+$listsColor: rgba(43, 41, 45, 0.6);
+$bordercolor: #00000015;
+$blue: #3040c4;
+$white: #fff;
+$orderbc: #f4f5f7;
+$audiencebc: rgb(0, 161, 198, 0.07);

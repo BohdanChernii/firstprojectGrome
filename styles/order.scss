@@ -1,7 +1,7 @@
 .order {
     min-width: 320px;
     margin: auto;
-    background-color: #f4f5f7;
+    background-color: $orderbc;
     padding: 50px 15px;
     @include for-pc {
         width: 1400px;
@@ -82,8 +82,8 @@
                 font-weight: 700;
                 font-size: 18px;
                 border-radius: 2px;
-                background-color: #3040c4;
-                color: #fff;
+                background-color: $blue;
+                color: $white;
                 @include for-pc {
                     width: 160px;
                     height: 48px;

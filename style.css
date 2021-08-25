@@ -564,7 +564,7 @@ body {
 
 .button__learn {
   background-color: #fff;
-  color: black;
+  color: #2b292d;
 }
 
 .audience__title {
@@ -714,7 +714,7 @@ body {
   font-weight: 700;
 }
 .card__list .card:hover {
-  background-color: #3141c5;
+  background-color: #3040c4;
   color: #fff;
   box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
 }
@@ -856,7 +856,11 @@ footer .container {
   display: flex;
   margin: auto;
   flex-direction: column;
-  align-items: center;
+}
+@media (min-width: 1400px) {
+  footer .container {
+    align-items: flex-start;
+  }
 }
 footer .logo {
   padding: 0 15px;
@@ -920,6 +924,7 @@ footer .download__links {
   margin-left: 15px;
   margin-right: 15px;
   max-width: 320px;
+  margin: auto;
 }
 @media (min-width: 1400px) {
   footer .download__links {
@@ -962,8 +967,12 @@ footer .download__links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 1px solid #E3E3E3;
   margin-top: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__lists {
+    border-top: 1px solid #f4f5f7;
+  }
 }
 
 .product {
@@ -977,7 +986,6 @@ footer .download__links {
   line-height: 28px;
   width: 290px;
   height: 28px;
-  margin-top: 30px;
   margin-bottom: 0;
 }
 .product__list {
@@ -1040,7 +1048,7 @@ footer .download__links {
 @media (min-width: 1400px) {
   .terms {
     width: 100%;
-    border-top: #2b292d20 1px solid;
+    border-top: #00000015 1px solid;
     margin-top: 0;
     padding: 15px 130px;
     display: flex;
